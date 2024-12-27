@@ -16,4 +16,8 @@ Train-Test Split:
 2. Data Normalization: Scaling pixel values between 0 and 1 improves training stability.
 3. Data Flattening: Flattening data from 2-D array to single Dimensional Array.
 4. Building a Model:
-5. 1. 
+5. 1. Model is trained with only a input layer with 10 Neurons and "Sigmoid" is a activation function. Then the model is tested for a flattened test data with 10 epoches.
+   2. Model is trained along with the input layer with 100 neuron and "relu" activation function one hidden layer is added with 10 neurons and "Sigmoid" activation function to improve accuracy. Then the model is tested for flattened test data with 5 epoches.
+   3. The model is trained with a scaled data(not flattened) by adding the flatten layer to the same model trained in 2nd run. This helps to improve the accuracy.
+6. All the above models are compiled with "adam" optimizer and 'sparse_categorical_crossentropy' loss.
+7. To compare the results of the above models confusion matrix is plotted.
